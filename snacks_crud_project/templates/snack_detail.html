@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="card-container">
+ 
+<div class="card">
+    <img src="{{snack.img_url}}" alt="{{snack.name}}" width="200px"/>
+    <div class="content">
+    <h3>{{snack.name}}</h3>
+    <h4>Purchaser: {{snack.purchaser}}</h4>
+    <p>Description: {{snack.description}}</p>
+    <a href="{% url 'snacks'%}">snacks lits</a>
+    <a href="{% url 'snack_update' snack.pk %}">Update</a>
+    <a href="{% url 'snack_delete' snack.pk %}">Delete</a>
+   
+
+    </div>
+</div>
+
+
+{% endblock %}
+
+

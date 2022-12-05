@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>  Snack Tracker Project</h1>
+<h2>Snacks List: </h2>
+<ul>
+  {% for snack in object_list %}
+  <div class="card" id="project-3">
+    <h3>{{snack.name}}</h3>
+    <a href="{% url 'snack_detail' snack.pk %}">View detail</a>
+    <a href="{% url 'snack_update' snack.pk %}">Update</a>
+    <a href="{% url 'snack_delete' snack.pk %}">Delete</a>
+    <a href="{% url 'home'%}">home</a>
+  </div>
+  
+  
+  {% endfor %}          
+  
+</ul>
+<a href="{% url 'snack_create' %}">Add Snack</a>
+
+{% endblock %}
+
