@@ -7,7 +7,7 @@ Author: Bashar Telfah
 ### Setup
 -  python 3.10.7
 
-## [Pull requests](https://github.com/Bashra99/snacks_crud_project/pulls)
+## [Pull requests]()
 
 
 #### run the server
